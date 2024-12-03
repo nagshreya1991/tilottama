@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <h3>Events</h3>
+      <button class="toggle_button" id="toggleButton">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+    </div>
+    <div class="row dashboad_body full_height">
+      <div class="left_sidebar">
+        <ul class="left_sidebar_menu">
+          <li><a href="index.html">Add Attendee</a></li>
+          <li class="active">
+            <a href="check-attendance.html">Check Attendance</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right_body">
+        <div class="right_body_white_box">
+          <h3>List of Attendee</h3>
+          <div class="table_scetion">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Sl. No.</th>
+                  <th>Name</th>
+                  <th>Club Name</th>
+                  <th class="text_center">10/01/2025</th>
+                  <th class="text_center">11/01/2025</th>
+                  <th class="text_center">12/01/2025</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Souvik chakraborty</td>
+                  <td>Rottery Club Kolkata</td>
+                  <td class="text_center">
+                    <input
+                      type="button"
+                      value="Category"
+                      class="btn info_btn auto_btn"
+                      id="openModal1"
+                    />
+                  </td>
+                  <td class="text_center">
+                    <input
+                      type="button"
+                      value="Category"
+                      class="btn info_btn auto_btn"
+                      id="openModal2"
+                    />
+                  </td>
+                  <td class="text_center">
+                    <input
+                      type="button"
+                      value="Category"
+                      class="btn info_btn auto_btn"
+                      id="openModal3"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal Start -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal1"
+          ><img src="image/close-icon.png" alt=""
+        /></span>
+        <div class="table_scetion">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text_center">Entry</th>
+                <th class="text_center">Dinner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img
+                    src="image/cross-icon.png"
+                    alt=""
+                    class="img_cross_icon"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal2"
+          ><img src="image/close-icon.png" alt=""
+        /></span>
+        <div class="table_scetion">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text_center">Breakfast Poside Entry</th>
+                <th class="text_center">Lottery(11AM - 12PM)</th>
+                <th class="text_center">Lunch</th>
+                <th class="text_center">Lottery(5PM - 6PM)</th>
+                <th class="text_center">Poolside Entry</th>
+                <th class="text_center">Dinner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img
+                    src="image/cross-icon.png"
+                    alt=""
+                    class="img_cross_icon"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal3"
+          ><img src="image/close-icon.png" alt=""
+        /></span>
+        <div class="table_scetion">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text_center">Lottery(11AM - 12PM)</th>
+                <th class="text_center">Gift</th>
+                <th class="text_center">Lunch</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text_center">
+                  <img
+                    src="image/cross-icon.png"
+                    alt=""
+                    class="img_cross_icon"
+                  />
+                </td>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+                <td class="text_center">
+                  <img src="image/checkmark-icon.png" alt="" class="img_icon" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--  Modal End -->
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      // Function to open the modal
+      function openModal(modalId) {
+        $(modalId)
+          .css({
+            display: "flex", // Set to 'flex' to show modal
+            opacity: 0, // Set opacity to 0 initially
+            transform: "scale(1)", // Set scale to 0.9 (slightly zoomed out)
+          })
+          .animate(
+            {
+              opacity: 1, // Fade in to opacity 1
+              transform: "scale(1)", // Scale up to normal size
+            },
+            300
+          ); // Duration of the transition (in ms)
+      }
+
+      // Function to close the modal
+      function closeModal(modalId) {
+        $(modalId).css("display", "none");
+      }
+
+      // Open modals when buttons are clicked
+      $("#openModal1").click(function () {
+        openModal("#modal1");
+      });
+
+      $("#openModal2").click(function () {
+        openModal("#modal2");
+      });
+
+      $("#openModal3").click(function () {
+        openModal("#modal3");
+      });
+
+      // Close modals when close buttons are clicked
+      $("#closeModal1").click(function () {
+        closeModal("#modal1");
+      });
+
+      $("#closeModal2").click(function () {
+        closeModal("#modal2");
+      });
+
+      $("#closeModal3").click(function () {
+        closeModal("#modal3");
+      });
+
+      // Close modals if clicked outside of the modal content
+      $(window).click(function (event) {
+        if ($(event.target).hasClass("modal")) {
+          closeModal(".modal");
+        }
+      });
+
+      $("#toggleButton").click(function () {
+        // Toggle the sidebar visibility by toggling the class
+        $(".left_sidebar").toggleClass("sidebar_visible");
+        $("body").toggleClass("body_sidebar_visible");
+      });
+    });
+  </script>
+</html>

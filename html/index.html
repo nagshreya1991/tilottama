@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <h3>Events</h3>
+      <button class="toggle_button" id="toggleButton">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+    </div>
+    <div class="row dashboad_body full_height">
+      <div class="left_sidebar">
+        <ul class="left_sidebar_menu">
+          <li class="active"><a href="index.html">Add Attendee</a></li>
+          <li><a href="check-attendance.html">Check Attendance</a></li>
+        </ul>
+      </div>
+      <div class="right_body">
+        <div class="right_body_white_box">
+          <ul class="upload_form">
+            <li>
+              <div class="upload_file_box">
+                <input type="file" class="upload_input_file" />
+                <input type="text" class="form_control" />
+              </div>
+              <!-- <input
+                  type="button"
+                  value="Bulk Upload"
+                  class="btn info_btn auto_btn"
+                /> -->
+              <a class="btn info_btn auto_btn" href="add-attendee-list.html"
+                >Bulk Upload</a
+              >
+            </li>
+          </ul>
+          <h3>Add individual Attendee</h3>
+          <ul class="add_individual_form">
+            <li>
+              <label>Name</label>
+              <input type="text" class="form_control" />
+            </li>
+            <li>
+              <label>Club Name</label>
+              <input type="text" class="form_control" />
+            </li>
+            <li>
+              <!-- <input type="button" value="Add" class="btn auto_btn" /> -->
+              <a class="btn auto_btn" href="add-attendee-list.html">Add</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggleButton").click(function () {
+          // Toggle the sidebar visibility by toggling the class
+          $(".left_sidebar").toggleClass("sidebar_visible");
+          $("body").toggleClass("body_sidebar_visible");
+        });
+      });
+    </script>
+  </body>
+</html>
